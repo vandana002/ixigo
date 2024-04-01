@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="39.599" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Hotel Booking in Ixigo Website" name="Hotel Booking in Ixigo Website" time="7.527">
+<system-out><![CDATA[
+Given I am in the homepage..................................................passed
+When I click on Hotels......................................................passed
+Then It should display the destination......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hotel Booking in Ixigo Website" name="Entering destination" time="11.03">
+<system-out><![CDATA[
+Given I am in hotel page....................................................passed
+When I click on destination and it should clear the existing destination....passed
+Then I enter the required destination "Hyderabad"...........................passed
+Then I should click on search...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hotel Booking in Ixigo Website" name="Search for a hotel" time="9.938">
+<system-out><![CDATA[
+Given I am in a showing properties page.....................................passed
+When I click on any hotel...................................................passed
+Then It should redirect to another page and it should show the reviews......passed
+]]></system-out>
+</testcase>
+<testcase classname="Hotel Booking in Ixigo Website" name="Invalid Destination" time="10.93">
+<system-out><![CDATA[
+Given I am in hotel page....................................................passed
+When I enter the "#@Ey".....................................................passed
+Then I should see Oops! No results were found for this keyword. Please modify your search and try again..passed
+]]></system-out>
+</testcase>
+</testsuite>
